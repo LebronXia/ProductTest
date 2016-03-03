@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingBottom="@dimen/padding_left"
+        android:paddingTop="@dimen/padding_right">
+
+        <RelativeLayout
+            android:id="@+id/firstRL"
+            android:layout_width="110dp"
+            android:layout_height="81dp"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/pic"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/firstRL"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font_12_000_bold"
+                android:text="10元话费"/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_below="@id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font_10_5D5D5D_nor"
+                android:text="积分夺宝 11月17日 "/>
+
+            <TextView
+                android:id="@+id/tv_windate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="2015年11月30日 00:30开奖"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_windate"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/font_12_000_bold"
+                    android:text="获奖者;"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/font_12_FF000_bold"
+                    android:text="忘记拥抱"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
